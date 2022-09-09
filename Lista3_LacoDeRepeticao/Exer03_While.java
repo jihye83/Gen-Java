@@ -14,7 +14,7 @@ public class Exer03_While {
 
 		int i, idade, contMenor = 0, contMaior = 0;
 
-		System.out.println("\nDigite a dua idade; ");
+		System.out.println("\nDigite a sua idade; ");
 		idade = sc.nextInt();
 
 		while (idade != 0) {
@@ -24,7 +24,7 @@ public class Exer03_While {
 			if (idade > 50) {
 				contMaior++;
 			}
-			System.out.println("\nDigite a dua idade; ");
+			System.out.println("\nDigite a sua idade; ");
 			idade = sc.nextInt();
 		}
 
