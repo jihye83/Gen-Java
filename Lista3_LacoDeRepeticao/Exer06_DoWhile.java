@@ -10,12 +10,13 @@ public class Exer06_DoWhile {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 
-		int num, media = 0, soma = 0, count = 0;
-
+		int num, soma = 0, count = 0;
+		double media = 0;
+		
 		do {
 			System.out.println("\nDigite um numero: ");
 			num = sc.nextInt();
-			//esse if é para ele nao contar o zero.
+			// esse if é para ele nao contar o zero.
 			if (num != 0) {
 				if (num % 3 == 0) {
 					soma += num;
@@ -25,6 +26,6 @@ public class Exer06_DoWhile {
 		} while (num != 0);
 
 		media = soma / count;
-		System.out.println("\nA media dos numeros somados é " + media);
+		System.out.printf("\nA media dos numeros somados é %.2f" + media);
 	}
 }
