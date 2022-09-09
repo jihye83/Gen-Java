@@ -12,20 +12,30 @@ public class Exer06_DoWhile {
 
 		int num, soma = 0, count = 0;
 		double media = 0;
-		
+
 		do {
 			System.out.println("\nDigite um numero: ");
 			num = sc.nextInt();
-			// esse if é para ele nao contar o zero.
-			if (num != 0) {
+			
+			if (num == 0) {
+				System.out.println("\nSair do Loop");
+			} else {
+
 				if (num % 3 == 0) {
 					soma += num;
 					count++;
 				}
+				System.out.println("\nDigite um numero: ");
+				num = sc.nextInt();
 			}
 		} while (num != 0);
 
-		media = soma / count;
-		System.out.printf("\nA media dos numeros somados é %.2f" + media);
+		if (count == 0) {
+			System.out.println("\nNao podemos dividir por zero");
+		} else {
+			media = soma / count;
+			System.out.printf("\nA media dos numeros somados é %.2f" + media);
+
+		}
 	}
 }
