@@ -12,16 +12,11 @@ public class Exer05_DoWhile {
 
 		int i, soma = 0, num;
 
-		System.out.println("\nDigite o número: ");
-		num = sc.nextInt();
-
 		do {
-			if (num > 0) {
-				soma += num;
-			}
-
 			System.out.println("\nDigite o número: ");
 			num = sc.nextInt();
+			soma += num;
+
 		} while (num != 0);
 
 		System.out.println("\nA soma dos números é " + soma);
