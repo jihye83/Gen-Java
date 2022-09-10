@@ -19,7 +19,7 @@ public class Exer04_While {
 
 		int idade, count = 0, op1, op2, pc = 0, mn = 0, ha = 0, oc = 0, nM = 0, cM = 0;
 
-		while (count < 150) {
+		while (count < 151) {
 			System.out.println("\nDigite a sua idade: ");
 			idade = sc.nextInt();
 			System.out.println("\n(1) - feminino \n(2) - Masculino \n(3) - Outros");
