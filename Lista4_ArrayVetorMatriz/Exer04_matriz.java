@@ -44,71 +44,79 @@ public class Exer04_matriz {
 				matrizB[i][j] = sc.nextFloat();
 			}
 		}
-		System.out.println("(1) somar as duas matrizes");
-		System.out.println("(2) subtrair a primeira matriz da segunda");
-		System.out.println("(3) adicionar uma constante as duas matrizes");
-		System.out.println("(4) imprimir as matrizes");
-		op = sc.nextInt();
 
-		switch (op) {
-		case 1:
-			for (i = 0; i < 2; i++) {
-				for (j = 0; j < 2; j++) {
-					matrizC[i][j] = matrizA[i][j] + matrizB[i][j];
-				}
-			}
-			System.out.println("\n");
-			imprime(matrizC);
-			break;
+		do {
+			System.out.println("\n(1) somar as duas matrizes");
+			System.out.println("(2) subtrair a primeira matriz da segunda");
+			System.out.println("(3) adicionar uma constante as duas matrizes");
+			System.out.println("(4) imprimir as matrizes");
+			System.out.println("(0) Sair do Loop");
+			op = sc.nextInt();
 
-		case 2:
-			for (i = 0; i < 2; i++) {
-				for (j = 0; j < 2; j++) {
-					matrizC[i][j] = matrizA[i][j] - matrizB[i][j];
+			switch (op) {
+			case 1:
+				for (i = 0; i < 2; i++) {
+					for (j = 0; j < 2; j++) {
+						matrizC[i][j] = matrizA[i][j] + matrizB[i][j];
+					}
 				}
-			}
-			imprime(matrizC);
-			break;
+				System.out.println("\n");
+				imprime(matrizC);
+				break;
 
-		case 3:
-			float c;
-			System.out.println("\nDigite um constante: ");
-			c = sc.nextFloat();
-			System.out.println("\nMatrizA com a constante: ");
-			for (i = 0; i < 2; i++) {
-				for (j = 0; j < 2; j++) {
-					matrizC[i][j] = matrizA[i][j] + c;
+			case 2:
+				for (i = 0; i < 2; i++) {
+					for (j = 0; j < 2; j++) {
+						matrizC[i][j] = matrizA[i][j] - matrizB[i][j];
+					}
 				}
-			}
-			imprime(matrizC);
-			System.out.println();
-			System.out.println("\nMatrizB com a constante: ");
-			for (i = 0; i < 2; i++) {
-				for (j = 0; j < 2; j++) {
-					matrizC[i][j] = matrizB[i][j] + c;
-				}
-			}
-			imprime(matrizC);
-			break;
+				imprime(matrizC);
+				break;
 
-		case 4:
-			System.out.println("\nMatrizA: ");
-			for (i = 0; i < 2; i++) {
-				for (j = 0; j < 2; j++) {
-					System.out.print(matrizA[i][j] + " ");
+			case 3:
+				float c;
+				System.out.println("\nDigite um constante: ");
+				c = sc.nextFloat();
+				System.out.println("\nMatrizA com a constante: ");
+				for (i = 0; i < 2; i++) {
+					for (j = 0; j < 2; j++) {
+						matrizC[i][j] = matrizA[i][j] + c;
+					}
 				}
-			}
-			System.out.println();
-			System.out.println("\nMatrizB: ");
-			for (i = 0; i < 2; i++) {
-				for (j = 0; j < 2; j++) {
-					System.out.print(matrizB[i][j] + " ");
+				imprime(matrizC);
+				System.out.println();
+				System.out.println("\nMatrizB com a constante: ");
+				for (i = 0; i < 2; i++) {
+					for (j = 0; j < 2; j++) {
+						matrizC[i][j] = matrizB[i][j] + c;
+					}
 				}
-			}
-			break;
+				imprime(matrizC);
+				break;
+
+			case 4:
+				System.out.println("\nMatrizA: ");
+				for (i = 0; i < 2; i++) {
+					for (j = 0; j < 2; j++) {
+						System.out.print(matrizA[i][j] + " ");
+					}
+				}
+				System.out.println();
+				System.out.println("\nMatrizB: ");
+				for (i = 0; i < 2; i++) {
+					for (j = 0; j < 2; j++) {
+						System.out.print(matrizB[i][j] + " ");
+					}
+				}
+				break;
+
+			case 0:
+				System.out.println("\nVocê saiu!!");
+				break;
 			default:
-				System.out.println("Opção Invalida!");
-		}
+				System.out.println("\nOpção Invalida.");
+			}
+		} while (op != 0);
 
 	}
 }
