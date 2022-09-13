@@ -6,3 +6,9 @@
 - `Lista 3`: Exercícios algoritmo laço de repetição - while, do while e for
 - `Lista 4`: Exercícios algoritmo Arrays - vetor e matriz
 
+### ✔️ Técnicas e tecnologias utilizadas
+
+- ``Java 17.0.4``
+- ``Spring Tool``
+- ``Logica de programação``
+- ``Programação Orientado a Objeto``
