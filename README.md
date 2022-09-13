@@ -10,6 +10,6 @@
 ### ✔️ Técnicas e tecnologias utilizadas
 
 - ``Java 17.0.4``
-- ``Spring Tool``
+- ``Spring Tool`` or ``Eclipse``
 - ``Logica de programação``
 - ``Programação Orientado a Objeto``
