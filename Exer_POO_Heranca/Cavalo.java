@@ -1,36 +1,21 @@
 package Exer_POO_Heranca;
 
-public class Cavalo extends Animal{
-	
-	private int velocidade;
+public class Cavalo extends Animal {
 
-	public Cavalo(String nome, int idade, String som, int velocidade) {
-		super(nome, idade, som);
-		this.velocidade = velocidade;
+	public Cavalo(String nome, int idade) {
+		super(nome, idade);
 	}
 
-	public int getVelocidade() {
-		return velocidade;
+	public void emitirSomHorse() {
+		System.out.println("O cavalo emite som de blu bluuu");
 	}
 
-	public void setVelocidade(int velocidade) {
-		this.velocidade = velocidade;
-	}
-
-	public void emitirSomHorse(String som1) {
-
-		System.out.println("Emite som: " + som1);
-	}
-
-	public void deveCorrerHorse(int corre) {
-		velocidade += corre;
-		System.out.println("\nNova velocidade: " + velocidade + " km/h");
+	public void deveCorrerHorse() {
+		System.out.println("O cavalo corre a 50km/h");
 	}
 
 	public void imprimirInfoHorse() {
-		System.out.println("\nNome do Animal: " + getNome() + "\nIdade do Animal: " + getIdade()+" anos" + "\nEmite som: "
-				+ getSom() + "\nVelocidade atual: " + velocidade + "km/h");
+		System.out.println("\nNome do Animal: " + getNome() + "\nIdade do Animal: " + getIdade() + " anos");
 	}
-	
 
 }

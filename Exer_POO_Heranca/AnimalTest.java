@@ -4,21 +4,21 @@ public class AnimalTest {
 
 	public static void main(String[] args) {
 		
-		Cachorro dog = new Cachorro("Cheetos", 2, "auau", 2);
-		Cavalo horse = new Cavalo("max", 10, "bluuu", 10);
-		Preguica pre =new Preguica("Lady", 8, "bahhhhhh", 3);
+		Cachorro dog = new Cachorro("Cheetos", 2);
+		Cavalo horse = new Cavalo("max", 10);
+		Preguica pre =new Preguica("Lady", 8);
 		
 		dog.imprimirInfoDog();
-		dog.deveCorrerDog(12);
-		dog.emitirSomDog("auauau");
+		dog.deveCorrerDog();
+		dog.emitirSomDog();
 		
 		horse.imprimirInfoHorse();
-		horse.deveCorrerHorse(45);
-		horse.emitirSomHorse("bluu bluuu");
+		horse.deveCorrerHorse();
+		horse.emitirSomHorse();
 		
 		pre.imprimirInfoPreguica();
-		pre.deveSubirPreguica(20);
-		pre.emitirSomPreguica("buhhhhhhh");
+		pre.deveSubirPreguica();
+		pre.emitirSomPreguica();
 	}
 
 }
