@@ -1,5 +1,5 @@
 # Generation-Java
-<h1 align="center"> Atividades em linguagem Java </h1>
+<h1 align="center"> 🚀Atividades em linguagem Java </h1>
 
 - `Lista 1`: Exercícios algoritmo matématico
 - `Lista 2`: Exercícios algoritmo condicional - if else, swith case
@@ -10,6 +10,6 @@
 ### ✔️ Técnicas e tecnologias utilizadas
 
 - ``Java 17.0.4``
-- ``Spring Tool``
+- ``Spring Tool`` or ``Eclipse``
 - ``Logica de programação``
 - ``Programação Orientado a Objeto``
