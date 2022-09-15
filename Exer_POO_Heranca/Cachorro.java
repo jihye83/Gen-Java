@@ -4,12 +4,14 @@ public class Cachorro extends Animal {
 
 	public Cachorro(String nome, int idade) {
 		super(nome, idade);
+
 	}
 
-	public void emitirSomDog() {
-		System.out.println("O cachorro emite som: Au AU AU");
+	@Override
+	public void emitirSom(String frase) {
+		System.out.println("Cachorro: Au AUUUUUUU");
 	}
-	
+
 	public void deveCorrerDog() {
 		System.out.println("O cachorro corre 20 km/h");
 	}

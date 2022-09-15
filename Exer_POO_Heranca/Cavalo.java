@@ -6,8 +6,13 @@ public class Cavalo extends Animal {
 		super(nome, idade);
 	}
 
-	public void emitirSomHorse() {
-		System.out.println("O cavalo emite som de blu bluuu");
+	@Override
+	public void emitirSom(String frase) {
+		if (getNome() != null) {
+			System.out.println("Cavalo: Shiiiiiiiiii...");
+		} else {
+			System.out.println("animal sem nome.");
+		}
 	}
 
 	public void deveCorrerHorse() {
