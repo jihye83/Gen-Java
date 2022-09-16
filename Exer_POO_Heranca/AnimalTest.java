@@ -9,7 +9,7 @@ public class AnimalTest {
 		Preguica pre = new Preguica("Lady", 8);
 
 		Animal animal = null;
-
+		
 		int n = (int) (Math.random() * 3.0);
 		System.out.println("\nO numero escolhido foi: " + n);
 
@@ -17,7 +17,7 @@ public class AnimalTest {
 		case 0:
 			animal = dog;
 			dog.imprimirInfoDog();
-			animal.emitirSom("");;
+			animal.emitirSom("");; //metodo abstract na classe dog.
 			break;
 		case 1:
 			animal = horse;
